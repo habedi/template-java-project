@@ -1,16 +1,16 @@
-name: Run Linter Checks
+name: Run Build
 
 on:
   workflow_dispatch:
   pull_request:
     branches:
-      - "main"
+        - "main"
 
 permissions:
-  contents: read
+    contents: read
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +24,5 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Run Spotless
-        run: make format-check
-
-      - name: Run Checkstyle
-        run: make lint
+      - name: Build with Make
+        run: make package

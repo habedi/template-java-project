@@ -1,3 +1,79 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+logs/
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar # Keep the wrapper
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+shelf/
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# JMH
+jmh-result.json
+jmh-output.txt
+
 # Python specific
 __pycache__/
 *.py[cod]
@@ -11,7 +87,6 @@ venv/
 
 # Packaging and distribution files
 .Python
-build/
 dist/
 *.egg-info/
 *.egg
@@ -42,21 +117,12 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# IDE specific files and directories
-.idea/
-*.iml
-.vscode/
-
 # Jupyter Notebook files
 .ipynb_checkpoints
 
 # Temporary files created by editors and the system and folders to ignore
-*.swp
 *~
-*.bak
-*.tmp
 temp/
-tmp/
 
 # Database files (SQLite, DuckDB, etc.)
 *.duckdb
@@ -67,17 +133,14 @@ tmp/
 # Dependency lock files (uncomment to ignore)
 poetry.lock
 
-# Rust specific
-/target/
-.cargo-ok
-cobertura.xml
-tarpaulin-report.html
-
-# Comment out the next line if you want to checkin your lock file for Cargo
-Cargo.lock
-
-# Miscellaneous files and directories to ignore
-# Add any additional file patterns a directory names that should be ignored down here
+# OS generated files
 .DS_Store
-tests/testdata/*.csv
-tests/testdata/*.parquet
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Add any additional file patterns a directory names that should be ignored down here
+*_output.txt
