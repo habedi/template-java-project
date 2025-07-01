@@ -1,0 +1,7 @@
+# Codecov configuration file
+# See https://docs.codecov.io/docs/codecov-yaml for more details
+
+ignore:
+  - "src/test/**/*"  # Ignore test files
+  - "src/jmh/**/*"   # Ignore benchmark files
+  - "examples/**/*"  # Ignore example files
