@@ -46,7 +46,7 @@ clean: ## Remove all build artifacts
 	@$(MVN) -B clean
 
 setup-hooks: ## Install Git hooks (pre-commit and pre-push)
-	@echo "Setting up pre-commit hooks..."
+	@echo "Setting up Git hooks..."
 	@if ! command -v pre-commit &> /dev/null; then \
 	   echo "pre-commit not found. Please install it using 'pip install pre-commit'"; \
 	   exit 1; \
@@ -56,5 +56,5 @@ setup-hooks: ## Install Git hooks (pre-commit and pre-push)
 	@pre-commit install-hooks
 
 test-hooks: ## Test Git hooks on all files
-	@echo "Testing pre-commit hooks..."
+	@echo "Testing Git hooks..."
 	@pre-commit run --all-files
